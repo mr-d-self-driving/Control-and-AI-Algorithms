@@ -3,6 +3,8 @@ Implementations of Control (PID, LQ, MPC, ...) and AI (fuzzy logic, Q-learner, S
 
 ## [Fuzzy Logic](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Fuzzy%20Logic)
 
+## [LQ Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/LQ%20Control)
+
 ## [Model Predictive Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Model%20Predictive%20Control)
 
 ## [Q-learners and SARSA](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Q-Learning%20and%20SARSA)
