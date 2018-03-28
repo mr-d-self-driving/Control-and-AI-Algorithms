@@ -63,20 +63,26 @@ Lastly, a PID-feedbackward controller is combined with a feedforward controller.
 
 ## [Q-learners and SARSA](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Q-Learning%20and%20SARSA)
 
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Q-Learning%20and%20SARSA/CatMouse.PNG" height="350">
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Q-Learning%20and%20SARSA/CatMouse2.PNG" height="350">
+Q-Learning and SARSA algorithms are used to let an imaginary cat (red) through a maze. Besides not running into the walls, the cat tries to locate the mouse (blue).
+
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Q-Learning%20and%20SARSA/CatMouse.PNG" width="350"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Q-Learning%20and%20SARSA/CatMouse2.PNG" width="350">
 
 ## [System Analysis](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/System%20Analysis)
 
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/BodeFirstOrder.png" height="350">
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/NyquistFirstOrder.png" height="350">
+Several systems are investigated with Bode and Nyquist plots.
 
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/BodePole.png" height="350">
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/NyquistPole.png" height="350">
+A first order system.
 
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/BodeSeries.png" height="350">
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/NyquistSeries.png" height="350">
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/BodeFirstOrder.png" width="350"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/NyquistFirstOrder.png" width="350">
 
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/poleAnalysisFirstOrderSystem.png" height="350">
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/poleAnalysisSecondOrderSystem.png" height="350">
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/poleAnalysisZPKSystem.png" height="350">
+A second order system.
+
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/BodePole.png" width="350"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/NyquistPole.png" width="350">
+
+A third order system.
+
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/BodeSeries.png" width="350">
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/NyquistSeries.png" width="350">
+
+Root locus analysis is performed on these three systems.
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/poleAnalysisFirstOrderSystem.png" width="350"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/poleAnalysisSecondOrderSystem.png" width="350"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/poleAnalysisZPKSystem.png" width="350">
