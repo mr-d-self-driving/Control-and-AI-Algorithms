@@ -30,26 +30,8 @@ kev = (Y*a*kV)/(d1 - b1 + Y*a);
 vev = (a*kV*(b1 - d1))/(d3*(d1 - b1 + Y*a));
 
 
-%% Plot simulation results
-% Run this segment after the chosen simulation
-t = simout(:,1);
-k = simout(:,2);
-s = simout(:,3);
-v = simout(:,4);
-subplot(3,1,1)
-hold on
-plot(t,k+kev,'o')
-subplot(3,1,2)
-hold on
-plot(t,s,'o')
-subplot(3,1,3)
-hold on
-plot(t,v+vev,'o')
-
-
 %% Uncontrolled state-space system
 sim('noControl')
-
 
 %% LQ Controlled state-space system
 
@@ -87,13 +69,11 @@ DS = [0 0 0;
 
 sim('noControlObserver')
 
-
 %% LQ Controlled state-space system with state observer
 % The same weights vector K for the LQ controller is used as in the system
 % without observer
 
 sim('LQControlObserver')
-
 
 %% LQ Controlled state-space system with reduced order state observer
 
@@ -114,3 +94,23 @@ DR = [0 0 0];
 init = 0 - HR*C2*[k0-kev;s0;v0-vev] + HR * D2 * kin;
 
 sim('LQControlReducedOrderObserver')
+
+%% Plot simulation results
+% Run this segment after the chosen simulation
+t = simout(:,1);
+k = simout(:,2);
+s = simout(:,3);
+v = simout(:,4);
+subplot(3,1,1)
+hold on
+plot(t,k+kev)
+legend('k')
+subplot(3,1,2)
+hold on
+plot(t,s)
+legend('s')
+subplot(3,1,3)
+hold on
+plot(t,v+vev)
+legend('v')
+suptitle('LQ Control, Reduced Order Observer')
