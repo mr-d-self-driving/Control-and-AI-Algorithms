@@ -3,6 +3,8 @@ Implementations of Control (PID, LQ, MPC, ...) and AI (fuzzy logic, Q-learner, S
 
 ## [Fuzzy Logic](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Fuzzy%20Logic)
 
+TO WRITE
+
 ## [LQ Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/LQ%20Control)
 
 LQ control is implemented using Simulink and MATLAB.
@@ -81,8 +83,8 @@ A second order system.
 
 A third order system.
 
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/BodeSeries.png" width="350">
-<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/NyquistSeries.png" width="350">
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/BodeSeries.png" width="350"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/NyquistSeries.png" width="350">
 
 Root locus analysis is performed on these three systems.
+
 <img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/poleAnalysisFirstOrderSystem.png" width="350"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/poleAnalysisSecondOrderSystem.png" width="350"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/System%20Analysis/poleAnalysisZPKSystem.png" width="350">
