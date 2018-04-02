@@ -1,0 +1,2 @@
+Implementation of Fuzzy Logic in MATLAB. In Fuzzy Logic, the truth values of variables may be any real number between 0 and 1. 
+Therefore, it can handle 'partial truth', where the truth value may range between completely true and completely false.
