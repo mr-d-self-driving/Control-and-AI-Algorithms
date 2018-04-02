@@ -4,17 +4,18 @@ The algorithms are briefly discussed in this readme, and some results are shown.
 
 Overview:
 1. [Fuzzy Logic](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Fuzzy%20Logic)
-2. [Model Predictive Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Model%20Predictive%20Control)
-3. [PID Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/PID%20Control)
-4. [Q-learners and SARSA](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Q-Learning%20and%20SARSA)
-5. [System Analysis](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/System%20Analysis)
+2. [LQ Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/LQ%20Control)
+3. [Model Predictive Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Model%20Predictive%20Control)
+4. [PID Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/PID%20Control)
+5. [Q-learners and SARSA](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Q-Learning%20and%20SARSA)
+6. [System Analysis](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/System%20Analysis)
 
 ## 1. [Fuzzy Logic](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Fuzzy%20Logic)
 
 Implementation of Fuzzy Logic in MATLAB. In Fuzzy Logic, the truth values of variables may be any real number between 0 and 1. 
 Therefore, it can handle 'partial truth', where the truth value may range between completely true and completely false.
 
-## [LQ Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/LQ%20Control)
+## 2. [LQ Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/LQ%20Control)
 
 LQ control is implemented using Simulink and MATLAB.
 
@@ -42,9 +43,25 @@ To achieve optimal control, the controlmatrix can be optimized (on an other syst
 
 <img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/LQ%20Control/Simulink%20models/optimalLQControl.PNG" width="400"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/LQ%20Control/Results/optimalControl.png" width="400">
 
-## 2. [Model Predictive Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Model%20Predictive%20Control)
+## 3. [Model Predictive Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Model%20Predictive%20Control)
 
-## 3. [PID Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/PID%20Control)
+Implementation of MPC on a basic system with the following uncontrolled step response.
+
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Model%20Predictive%20Control/Figures/StepResponse.png" width="400">
+
+After optimization of the parameters, the model predictive control algorithm will accurately responds on a change in the set point. Left the response, right the taken control action.
+
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Model%20Predictive%20Control/Figures/ControlledSystem.png" width="400"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Model%20Predictive%20Control/Figures/ControlAction.png" width="400">
+
+The calculations done by the MPC around the change in stepoint are visualised below:
+
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Model%20Predictive%20Control/Figures/t1003.PNG" width="400"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Model%20Predictive%20Control/Figures/t1020.PNG" width="400">
+
+The impact of the parameters m and p is visualised:
+
+<img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Model%20Predictive%20Control/Figures/VariationM.png" width="400"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Model%20Predictive%20Control/Figures/VariationP.png" width="400">
+
+## 4. [PID Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/PID%20Control)
 A standard PID controller is implemented in Simulink and MATLAB. The influence of the different control settings is studied.
 <img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/PID%20Control/Simulink%20models/PIDcontroller_model.PNG" width="400"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/PID%20Control/PIDcontrollerInfluenceP.png" width="400"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/PID%20Control/PIDcontrollerInfluenceI.png" width="400"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/PID%20Control/PIDcontrollerInfluenceD.png" width="400">
 
@@ -72,13 +89,13 @@ Lastly, a PID-feedbackward controller is combined with a feedforward controller.
 
 <img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/PID%20Control/Simulink%20models/FeedforwardBackward_model.PNG" width="400"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/PID%20Control/FeedforwardBackward.png" width="400">
 
-## 4. [Q-learners and SARSA](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Q-Learning%20and%20SARSA)
+## 5. [Q-learners and SARSA](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Q-Learning%20and%20SARSA)
 
 Q-Learning and SARSA algorithms are used to let an imaginary cat (red) through a maze. Besides not running into the walls, the cat tries to locate the mouse (blue).
 
 <img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Q-Learning%20and%20SARSA/CatMouse.PNG" width="400"><img src="https://github.com/WardQ/Control-and-AI-Algorithms/blob/master/Q-Learning%20and%20SARSA/CatMouse2.PNG" width="400">
 
-## 5. [System Analysis](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/System%20Analysis)
+## 6. [System Analysis](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/System%20Analysis)
 
 Several systems are investigated with Bode and Nyquist plots.
 
