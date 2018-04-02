@@ -11,4 +11,4 @@ ParVM.R = [5 4 3 2;
   
 y_model = vaagmodel(x,ParVM);
 
-RMSE = sum((y-y_model).^2)/length(y_model);
+RMSE = sum((y-y_model).^2)/length(y_model)

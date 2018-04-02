@@ -11,7 +11,8 @@ Overview:
 
 ## 1. [Fuzzy Logic](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/Fuzzy%20Logic)
 
-TO WRITE
+Implementation of Fuzzy Logic in MATLAB. In Fuzzy Logic, the truth values of variables may be any real number between 0 and 1. 
+Therefore, it can handle 'partial truth', where the truth value may range between completely true and completely false.
 
 ## [LQ Control](https://github.com/WardQ/Control-and-AI-Algorithms/tree/master/LQ%20Control)
 
